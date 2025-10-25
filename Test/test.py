@@ -9,7 +9,7 @@ import copy
 
 
 # initialize quantum services with latest authentication pattern 
-service = QiskitRuntimeService() # this was where i put the credentials to the qiskit account. not availble for security risks obivously.
+service = QiskitRuntimeService() # this was where we put the credentials to the qiskit account. not availble for security risks
 backend = service.least_busy(simulator=False, operational=True)  
 
 class QuantumStateVisualizer:
