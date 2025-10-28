@@ -21,7 +21,7 @@ class QuantumCircuitEnvExpanded:
     def __init__(self, num_qubits=10, max_time_steps=40, noise_decay_factor=0.97, idle_noise_reduction=0.015,
                  max_steps_per_episode=200, hardware_topology=None, total_episodes=10001, seed=None, debug=False):
         self.device = torch.device('cpu')
-        self.num_qubits = num_qubits # to add more variable circuits, we made sure to vary the # of qubits between 3 and 12
+        self.num_qubits = num_qubits 
         self.max_time_steps = max_time_steps
         self.max_steps_per_episode = max_steps_per_episode
         self.hardware_topology = hardware_topology
